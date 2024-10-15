@@ -35,6 +35,21 @@ The **Real-Time Anomaly Detection Dashboard** is a Python-based application that
 - **Threading Support**: Ensures smooth and responsive performance during data streaming and processing.
 - **Robust Error Handling**: Improved error handling and data validation to ensure application stability.
 
+## Explanation of the Chosen Algorithm
+
+The algorithm used for anomaly detection in this code is River's Predictive Anomaly Detection, which leverages a time series model (SNARIMAX) to predict future values based on past observations. The effectiveness of this approach lies in its ability to adapt to changes in the data stream, such as concept drift and seasonal patterns, making it suitable for real-time applications. 
+
+The model calculates an anomaly score for each incoming data point, and if the score exceeds a predefined threshold, the point is flagged as an anomaly. This method is robust for detecting outliers in dynamic environments, ensuring timely identification of potential issues.
+
+**SNARIMAX** stands for (S)easonal (N)on-linear (A)uto(R)egressive (I)ntegrated (M)oving-(A)verage with e(X)ogenous inputs model. This model generalizes many established time series models in a single interface that can be trained online. It assumes that the provided training data is ordered in time and is uniformly spaced. It is made up of the following components:
+
+- **S (Seasonal)**: Captures seasonal patterns in the data.
+- **N (Non-linear)**: Any online regression model can be used, not necessarily linear regression.
+- **AR (Autoregressive)**: Lags of the target variable are used as features.
+- **I (Integrated)**: The model can be fitted on a differenced version of a time series.
+- **MA (Moving average)**: Lags of the errors are used as features.
+- **X (Exogenous)**: Users can provide additional features, ensuring they are available at both training and prediction time.
+
 ## Demo
 
 ![Dashboard Screenshot](screenshots/dashboard.png)
