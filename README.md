@@ -53,7 +53,7 @@ The **Real-Time Anomaly Detection Dashboard** is a Python-based application that
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/real-time-anomaly-detection.git
+    git clone https://github.com/HimanshuKumar17052001/real-time-anomaly-detection.git
     cd real-time-anomaly-detection
     ```
 
