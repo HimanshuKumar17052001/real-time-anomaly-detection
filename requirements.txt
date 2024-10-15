@@ -1,0 +1,5 @@
+numpy==1.23.5
+pandas==1.5.3
+river==0.14.0
+plotly==5.10.0
+dash==2.5.1
